@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author 	= {'jiadawei' => 'jiadawei80@126.com'}
   s.ios.deployment_target = '9.0'
   s.source	= {:git => 'https://github.com/iwufan/DJEmptyView.git', :tag => s.version}
-  s.source_files = 'DJEmptyViewDemo/DJEmptyViewDemo/DJEmptyView/**/*.{swift}'
+  s.source_files = 'DJEmptyViewDemo/DJEmptyViewDemo/DJEmptyView/**/*'
   s.requires_arc = true
   s.frameworks	= 'UIKit'
 end
