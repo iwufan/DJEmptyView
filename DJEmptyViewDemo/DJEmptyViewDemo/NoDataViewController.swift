@@ -16,7 +16,7 @@ class NoDataViewController: UIViewController {
         
         view.backgroundColor = UIColor.white
 
-        view.dj_showEmptyView(DJEmptyView())
+        view.dj_showEmptyView(DJEmptyView(imageName: "dj_img_no_data"))
     }
 
 }

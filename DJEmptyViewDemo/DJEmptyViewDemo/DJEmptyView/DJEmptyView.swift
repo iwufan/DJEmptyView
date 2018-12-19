@@ -8,7 +8,7 @@
 
 import UIKit
 
-/// 空页面
+/// Empty View
 public class DJEmptyView: UIView {
     
     private let screenWidth = UIScreen.main.bounds.width
@@ -25,15 +25,15 @@ public class DJEmptyView: UIView {
             bgView.frame = frame
         }
     }
-
+    
     private var messageLabel: UILabel!
     
-    public init(tipInfo: String = "暂无数据", imageName: String = "dj_img_no_data", imageTopOffset: CGFloat = 133) {
+    public init(tipInfo: String = "暂无数据", imageName: String, imageTopOffset: CGFloat = 133) {
         super.init(frame: CGRect())
         self.tipInfo = tipInfo
         self.imageName = imageName
         self.imageTopOffset = imageTopOffset
-
+        
         addViews()
     }
     
@@ -46,12 +46,12 @@ extension DJEmptyView {
     
     private func addViews() {
         
-        // 背景
+        // background view
         bgView = UIView(frame: CGRect(x: 0, y: (getNavigationBarHeight() + imageTopOffset), width: screenWidth, height: 251))
         
         addSubview(bgView)
         
-        // 图
+        // empty image
         if let image = UIImage(named: imageName) {
             
             imageView = UIImageView(image: image)
@@ -60,18 +60,20 @@ extension DJEmptyView {
             imageView.frame = CGRect(x: imageViewX, y: 0, width: image.size.width, height: image.size.height)
             
             bgView.addSubview(imageView)
+            // tip message
+            messageLabel = UILabel()
+            messageLabel.text = tipInfo
+            messageLabel.font = UIFont.systemFont(ofSize: 14)
+            messageLabel.textColor = UIColor.darkGray
+            messageLabel.textAlignment = .center
+            
+            let messageY = imageView.frame.maxY + 11
+            messageLabel.frame = CGRect(x: 0, y: messageY, width: screenWidth, height: 20)
+            
+            bgView.addSubview(messageLabel)
+        } else {
+            print("error: DJEmptyView - image \(imageName ?? "") doesn't exsit.")
         }
-        // 提示文字
-        messageLabel = UILabel()
-        messageLabel.text = tipInfo
-        messageLabel.font = UIFont.systemFont(ofSize: 14)
-        messageLabel.textColor = UIColor.darkGray
-        messageLabel.textAlignment = .center
-        
-        let messageY = imageView.frame.maxY + 11
-        messageLabel.frame = CGRect(x: 0, y: messageY, width: screenWidth, height: 20)
-        
-        bgView.addSubview(messageLabel)
     }
 }
 
