@@ -6,13 +6,13 @@ Add an empty view to your table view with one line of codes.
 ### Main Features!
 - Add an empty view to a table view or a view.
 ### How To Install?
-### Manual
+##### Manual
 Just drag the `DJEmptyView` folder to your project. 
 ##### Cocoapods
 `pod 'DJEmptyView'`
 
 You should also import this framework before you use it, like this `import DJEmptyView`.
-##### How to use DJEmptyView?
+### How to use DJEmptyView?
 It's very simple. only one function you should. In your loadData function, you can just do this.
 ```
 if dataArray.count == 0 && self.pageNumber == 1 {
@@ -28,4 +28,4 @@ MIT
 ### Contact Me
 [悟饭哪](https://www.jianshu.com/u/819830158b47)
 
-###### Thanks
+#### Thanks
