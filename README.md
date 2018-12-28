@@ -1,7 +1,9 @@
 # DJEmptyView
 Add an empty view to your table view with one line of codes.
 
-![](https://github.com/iwufan/Resources/blob/master/Images/DJEmptyView/example1.gif)
+![](https://github.com/iwufan/Resources/blob/master/Images/DJEmptyView/example1.png)
+![](https://github.com/iwufan/Resources/blob/master/Images/DJEmptyView/example2.png)
+![](https://github.com/iwufan/Resources/blob/master/Images/DJEmptyView/example3.gif)
 
 ### Main Features!
 - Add an empty view to a table view or a view.
