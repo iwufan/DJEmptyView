@@ -15,12 +15,23 @@ Just drag the `DJEmptyView` folder to your project.
 
 You should also import this framework before you use it, like this `import DJEmptyView`.
 ### How to use DJEmptyView?
-It's very simple. only one function you should. In your loadData function, you can just do this.
+It's very simple. only one function you should update. In your `loadData` function, you can just do this.
 ```
-if dataArray.count == 0 && self.pageNumber == 1 {
-    self.tableView.dj_showEmptyView(DJEmptyView(tipInfo: "No Related Data", imageName: "img_no_data"))
-} else {
-    self.tableView.dj_hideEmptyView()
+private func loadData() {
+        
+    MyService.request(target: .dataList, success: { (res) -> (Void) in
+        // empty view start.
+        if dataArray.count == 0 {
+            self.tableView.reloadData()
+            self.tableView.dj_showEmptyView(DJEmptyView(tipInfo: "no data", imageName: "img_no_data"))
+            return
+        }
+            
+        self.tableView.dj_hideEmptyView()
+        // empty view end.
+        
+        // more codes
+    })
 }
 ```
 ### How to pull to refresh in empty view?
