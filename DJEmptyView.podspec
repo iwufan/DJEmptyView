@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name	= 'DJEmptyView'
-  s.version	= '1.0.2'
+  s.version	= '1.0.3'
   s.summary	= 'Add an empty view to your table view with one line of codes..'
   s.homepage	= 'https://github.com/iwufan/DJEmptyView'
   s.license	= 'MIT'

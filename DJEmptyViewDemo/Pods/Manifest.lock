@@ -1,0 +1,16 @@
+PODS:
+  - ESPullToRefresh (2.7)
+
+DEPENDENCIES:
+  - ESPullToRefresh
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ESPullToRefresh
+
+SPEC CHECKSUMS:
+  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
+
+PODFILE CHECKSUM: 3a228244edda97902d569f0d3e4fc03c3bd95dfc
+
+COCOAPODS: 1.6.0.beta.2

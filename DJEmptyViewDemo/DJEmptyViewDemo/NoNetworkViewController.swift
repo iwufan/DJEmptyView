@@ -2,13 +2,13 @@
 //  NoNetworkViewController.swift
 //  DJEmptyViewDemo
 //
-//  Created by 贾大伟 on 2018/12/19.
+//  Created by David Jia on 2018/12/19.
 //  Copyright © 2018 david. All rights reserved.
 //
 
 import UIKit
 
-/// 无网络页面
+/// No Network
 class NoNetworkViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,7 +16,7 @@ class NoNetworkViewController: UIViewController {
         
         view.backgroundColor = UIColor.white
 
-        view.dj_showEmptyView(DJEmptyView(tipInfo: "网络连接失败", imageName: "dj_img_no_network"))
+        view.dj_showEmptyView(DJEmptyView(tipInfo: "Network connect failed", imageName: "dj_img_no_network"))
     }
 
 }

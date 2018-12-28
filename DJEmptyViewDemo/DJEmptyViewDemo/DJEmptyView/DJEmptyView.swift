@@ -2,7 +2,7 @@
 //  DJEmptyView.swift
 //  EmptyViewDemo
 //
-//  Created by 贾大伟 on 2018/11/30.
+//  Created by David Jia on 2018/11/30.
 //  Copyright © 2018 david. All rights reserved.
 //
 
@@ -28,7 +28,7 @@ public class DJEmptyView: UIView {
     
     private var messageLabel: UILabel!
     
-    public init(tipInfo: String = "暂无数据", imageName: String, imageTopOffset: CGFloat = 133) {
+    public init(tipInfo: String = "No Data", imageName: String, imageTopOffset: CGFloat = 133) {
         super.init(frame: CGRect())
         self.tipInfo = tipInfo
         self.imageName = imageName

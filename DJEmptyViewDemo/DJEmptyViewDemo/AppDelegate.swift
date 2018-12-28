@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  DJEmptyViewDemo
 //
-//  Created by 贾大伟 on 2018/12/19.
+//  Created by David Jia on 2018/12/19.
 //  Copyright © 2018 david. All rights reserved.
 //
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00AE1FB74F472B1873E75655 /* Pods_DJEmptyViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBED9C445DA83C6F19C53FC /* Pods_DJEmptyViewDemo.framework */; };
 		E47A9E8721CA88C300A65A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47A9E8621CA88C300A65A99 /* AppDelegate.swift */; };
 		E47A9E8921CA88C300A65A99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47A9E8821CA88C300A65A99 /* ViewController.swift */; };
 		E47A9E8C21CA88C300A65A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47A9E8A21CA88C300A65A99 /* Main.storyboard */; };
@@ -18,9 +19,13 @@
 		E47A9EA521CA950700A65A99 /* NoNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47A9EA421CA950700A65A99 /* NoNetworkViewController.swift */; };
 		E47A9EC921CAC50900A65A99 /* dj_img_no_data.png in Resources */ = {isa = PBXBuildFile; fileRef = E47A9EC721CAC50900A65A99 /* dj_img_no_data.png */; };
 		E47A9ECA21CAC50900A65A99 /* dj_img_no_network.png in Resources */ = {isa = PBXBuildFile; fileRef = E47A9EC821CAC50900A65A99 /* dj_img_no_network.png */; };
+		E47A9F0721CE879300A65A99 /* NoDataRefreshViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47A9F0621CE879300A65A99 /* NoDataRefreshViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		302B9692BA48BDB9178AEB8A /* Pods-DJEmptyViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJEmptyViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJEmptyViewDemo/Pods-DJEmptyViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5DBED9C445DA83C6F19C53FC /* Pods_DJEmptyViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJEmptyViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE55F3EACAEB84CCF69C9DD /* Pods-DJEmptyViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJEmptyViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJEmptyViewDemo/Pods-DJEmptyViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E47A9E8321CA88C300A65A99 /* DJEmptyViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJEmptyViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47A9E8621CA88C300A65A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E47A9E8821CA88C300A65A99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		E47A9EA421CA950700A65A99 /* NoNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNetworkViewController.swift; sourceTree = "<group>"; };
 		E47A9EC721CAC50900A65A99 /* dj_img_no_data.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dj_img_no_data.png; sourceTree = "<group>"; };
 		E47A9EC821CAC50900A65A99 /* dj_img_no_network.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dj_img_no_network.png; sourceTree = "<group>"; };
+		E47A9F0621CE879300A65A99 /* NoDataRefreshViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoDataRefreshViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +47,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00AE1FB74F472B1873E75655 /* Pods_DJEmptyViewDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63846A659606D7E153CE9F9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DBED9C445DA83C6F19C53FC /* Pods_DJEmptyViewDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		697999ED2432059B8F67ECCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AE55F3EACAEB84CCF69C9DD /* Pods-DJEmptyViewDemo.debug.xcconfig */,
+				302B9692BA48BDB9178AEB8A /* Pods-DJEmptyViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E47A9E7A21CA88C300A65A99 = {
 			isa = PBXGroup;
 			children = (
 				E47A9E8521CA88C300A65A99 /* DJEmptyViewDemo */,
 				E47A9E8421CA88C300A65A99 /* Products */,
+				697999ED2432059B8F67ECCD /* Pods */,
+				63846A659606D7E153CE9F9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,6 +98,7 @@
 				E47A9E8821CA88C300A65A99 /* ViewController.swift */,
 				E47A9EA221CA94F900A65A99 /* NoDataViewController.swift */,
 				E47A9EA421CA950700A65A99 /* NoNetworkViewController.swift */,
+				E47A9F0621CE879300A65A99 /* NoDataRefreshViewController.swift */,
 				E47A9E8A21CA88C300A65A99 /* Main.storyboard */,
 				E47A9E8D21CA88C500A65A99 /* Assets.xcassets */,
 				E47A9E8F21CA88C500A65A99 /* LaunchScreen.storyboard */,
@@ -105,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E47A9E9521CA88C500A65A99 /* Build configuration list for PBXNativeTarget "DJEmptyViewDemo" */;
 			buildPhases = (
+				AF6F4E52F468AF86B3B9EA49 /* [CP] Check Pods Manifest.lock */,
 				E47A9E7F21CA88C300A65A99 /* Sources */,
 				E47A9E8021CA88C300A65A99 /* Frameworks */,
 				E47A9E8121CA88C300A65A99 /* Resources */,
+				81D7B1F800C976D6C1387BF2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +195,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		81D7B1F800C976D6C1387BF2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DJEmptyViewDemo/Pods-DJEmptyViewDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DJEmptyViewDemo/Pods-DJEmptyViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF6F4E52F468AF86B3B9EA49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DJEmptyViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E47A9E7F21CA88C300A65A99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -173,6 +249,7 @@
 			files = (
 				E47A9EA521CA950700A65A99 /* NoNetworkViewController.swift in Sources */,
 				E47A9EA321CA94F900A65A99 /* NoDataViewController.swift in Sources */,
+				E47A9F0721CE879300A65A99 /* NoDataRefreshViewController.swift in Sources */,
 				E47A9E9C21CA899D00A65A99 /* DJEmptyView.swift in Sources */,
 				E47A9E8921CA88C300A65A99 /* ViewController.swift in Sources */,
 				E47A9E8721CA88C300A65A99 /* AppDelegate.swift in Sources */,
@@ -320,6 +397,7 @@
 		};
 		E47A9E9621CA88C500A65A99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE55F3EACAEB84CCF69C9DD /* Pods-DJEmptyViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -339,6 +417,7 @@
 		};
 		E47A9E9721CA88C500A65A99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 302B9692BA48BDB9178AEB8A /* Pods-DJEmptyViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

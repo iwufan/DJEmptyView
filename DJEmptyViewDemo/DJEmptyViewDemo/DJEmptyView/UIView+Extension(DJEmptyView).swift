@@ -2,7 +2,7 @@
 //  UIView+Extension.swift
 //  EmptyViewDemo
 //
-//  Created by 贾大伟 on 2018/11/30.
+//  Created by David Jia on 2018/11/30.
 //  Copyright © 2018 david. All rights reserved.
 //
 
