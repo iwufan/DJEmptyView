@@ -56,8 +56,9 @@ extension DJEmptyView {
             
             imageView = UIImageView(image: image)
             
-            let imageViewX = (bgView.frame.width - image.size.width) / 2
-            imageView.frame = CGRect(x: imageViewX, y: 0, width: image.size.width, height: image.size.height)
+            let imageWidth = image.size.width >= screenWidth ? screenWidth : image.size.width
+            let imageViewX = (bgView.frame.width - imageWidth) / 2
+            imageView.frame = CGRect(x: imageViewX, y: 0, width: imageWidth, height: imageWidth)
             
             bgView.addSubview(imageView)
             // tip message
