@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00AE1FB74F472B1873E75655 /* Pods_DJEmptyViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DBED9C445DA83C6F19C53FC /* Pods_DJEmptyViewDemo.framework */; };
+		E46B9A5E2216EE2E001A8F9C /* ClickButtonToRefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B9A5D2216EE2E001A8F9C /* ClickButtonToRefreshButton.swift */; };
 		E47A9E8721CA88C300A65A99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47A9E8621CA88C300A65A99 /* AppDelegate.swift */; };
 		E47A9E8921CA88C300A65A99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47A9E8821CA88C300A65A99 /* ViewController.swift */; };
 		E47A9E8C21CA88C300A65A99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47A9E8A21CA88C300A65A99 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		302B9692BA48BDB9178AEB8A /* Pods-DJEmptyViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJEmptyViewDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DJEmptyViewDemo/Pods-DJEmptyViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		5DBED9C445DA83C6F19C53FC /* Pods_DJEmptyViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DJEmptyViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE55F3EACAEB84CCF69C9DD /* Pods-DJEmptyViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DJEmptyViewDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DJEmptyViewDemo/Pods-DJEmptyViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E46B9A5D2216EE2E001A8F9C /* ClickButtonToRefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickButtonToRefreshButton.swift; sourceTree = "<group>"; };
 		E47A9E8321CA88C300A65A99 /* DJEmptyViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJEmptyViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47A9E8621CA88C300A65A99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E47A9E8821CA88C300A65A99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				E47A9EA221CA94F900A65A99 /* NoDataViewController.swift */,
 				E47A9EA421CA950700A65A99 /* NoNetworkViewController.swift */,
 				E47A9F0621CE879300A65A99 /* NoDataRefreshViewController.swift */,
+				E46B9A5D2216EE2E001A8F9C /* ClickButtonToRefreshButton.swift */,
 				E47A9E8A21CA88C300A65A99 /* Main.storyboard */,
 				E47A9E8D21CA88C500A65A99 /* Assets.xcassets */,
 				E47A9E8F21CA88C500A65A99 /* LaunchScreen.storyboard */,
@@ -253,6 +256,7 @@
 				E47A9E9C21CA899D00A65A99 /* DJEmptyView.swift in Sources */,
 				E47A9E8921CA88C300A65A99 /* ViewController.swift in Sources */,
 				E47A9E8721CA88C300A65A99 /* AppDelegate.swift in Sources */,
+				E46B9A5E2216EE2E001A8F9C /* ClickButtonToRefreshButton.swift in Sources */,
 				E47A9E9B21CA899D00A65A99 /* UIView+Extension(DJEmptyView).swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

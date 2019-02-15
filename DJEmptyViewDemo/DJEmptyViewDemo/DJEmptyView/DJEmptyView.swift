@@ -18,6 +18,7 @@ public class DJEmptyView: UIView {
     private var tipInfo: String!
     private var imageName: String!
     
+    /// offset between navigationbar and image
     public var imageTopOffset: CGFloat! {
         didSet {
             var frame = bgView.frame
@@ -25,8 +26,29 @@ public class DJEmptyView: UIView {
             bgView.frame = frame
         }
     }
+    /// closure for click refresh button
+    public var clickClosure: (() -> Void)!
+    /// title for refresh button
+    public var buttonTitle: String! {
+        didSet {
+            messageLabel.isHidden = true
+            refreshButton.isHidden = false
+            refreshButton.setTitle(buttonTitle, for: .normal)
+            
+            var frame = bgView.frame
+            frame.size.height = 266
+            bgView.frame = frame
+        }
+    }
+    /// background color for refresh button
+    public var buttonBackgroundColor: UIColor! {
+        didSet {
+            refreshButton.backgroundColor = buttonBackgroundColor
+        }
+    }
     
     private var messageLabel: UILabel!
+    private var refreshButton: UIButton!
     
     public init(tipInfo: String = "No Data", imageName: String, imageTopOffset: CGFloat = 133) {
         super.init(frame: CGRect())
@@ -72,8 +94,30 @@ extension DJEmptyView {
             messageLabel.frame = CGRect(x: 0, y: messageY, width: screenWidth, height: 20)
             
             bgView.addSubview(messageLabel)
+            
+            refreshButton = UIButton()
+//            refreshButton.backgroundColor = UIColor.orange
+            refreshButton.layer.cornerRadius = 4
+            refreshButton.layer.masksToBounds = true
+            refreshButton.frame = CGRect(x: screenWidth/2-47, y: messageY, width: 94, height: 35)
+//            refreshButton.setTitle("刷新一下", for: .normal)
+            refreshButton.titleLabel?.font = UIFont.systemFont(ofSize: 14)
+            refreshButton.addTarget(self, action: #selector(clickRefreshButton), for: .touchUpInside)
+            refreshButton.isHidden = true
+            
+            bgView.addSubview(refreshButton)
         } else {
             print("error: DJEmptyView - image \(imageName ?? "") doesn't exsit.")
+        }
+    }
+}
+
+extension DJEmptyView {
+    /// click refresh button
+    @objc private func clickRefreshButton() {
+        
+        if let closure = clickClosure {
+            closure()
         }
     }
 }

@@ -14,14 +14,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // no data
-        let noDataButton = UIButton(frame: CGRect(x: 130, y: 300, width: 100, height: 50))
+        let noDataButton = UIButton(frame: CGRect(x: 130, y: 200, width: 100, height: 50))
         noDataButton.setTitle("No Data", for: .normal)
         noDataButton.setTitleColor(UIColor.orange, for: .normal)
         noDataButton.addTarget(self, action: #selector(clickNoData), for: .touchUpInside)
         
         view.addSubview(noDataButton)
         // no network
-        let noNetworkButton = UIButton(frame: CGRect(x: 130, y: 400, width: 100, height: 50))
+        let noNetworkButton = UIButton(frame: CGRect(x: 130, y: 300, width: 100, height: 50))
         noNetworkButton.setTitle("No Network", for: .normal)
         noNetworkButton.setTitleColor(UIColor.blue, for: .normal)
         noNetworkButton.addTarget(self, action: #selector(clickNoNetwork), for: .touchUpInside)
@@ -29,12 +29,20 @@ class ViewController: UIViewController {
         view.addSubview(noNetworkButton)
         
         // refresh
-        let refreshButton = UIButton(frame: CGRect(x: 130, y: 500, width: 100, height: 50))
+        let refreshButton = UIButton(frame: CGRect(x: 130, y: 400, width: 100, height: 50))
         refreshButton.setTitle("Refresh", for: .normal)
         refreshButton.setTitleColor(UIColor.purple, for: .normal)
         refreshButton.addTarget(self, action: #selector(clickRefresh), for: .touchUpInside)
         
         view.addSubview(refreshButton)
+        
+        // click refresh
+        let clickToRefreshButton = UIButton(frame: CGRect(x: 80, y: 500, width: 200, height: 50))
+        clickToRefreshButton.setTitle("Click Refresh Button", for: .normal)
+        clickToRefreshButton.setTitleColor(UIColor.purple, for: .normal)
+        clickToRefreshButton.addTarget(self, action: #selector(clickToRefresh), for: .touchUpInside)
+        
+        view.addSubview(clickToRefreshButton)
     }
 }
 
@@ -55,6 +63,11 @@ extension ViewController {
     @objc private func clickRefresh() {
         
         navigationController?.pushViewController(NoDataRefreshViewController(), animated: true)
+    }
+    
+    @objc private func clickToRefresh() {
+        
+        navigationController?.pushViewController(ClickButtonToRefreshButton(), animated: true)
     }
 }
 
