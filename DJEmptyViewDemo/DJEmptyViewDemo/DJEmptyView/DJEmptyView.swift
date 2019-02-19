@@ -26,6 +26,12 @@ public class DJEmptyView: UIView {
             bgView.frame = frame
         }
     }
+    /// tip text color
+    public var tipColor: UIColor! {
+        didSet {
+            messageLabel.textColor = tipColor
+        }
+    }
     /// closure for click refresh button
     public var clickClosure: (() -> Void)!
     /// title for refresh button

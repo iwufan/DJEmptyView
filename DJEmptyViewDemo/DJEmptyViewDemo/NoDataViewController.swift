@@ -16,7 +16,9 @@ class NoDataViewController: UIViewController {
         
         view.backgroundColor = UIColor.white
 
-        view.dj_showEmptyView(DJEmptyView(tipInfo:"No Related Data", imageName: "dj_img_no_data"))
+        let emptyView = DJEmptyView(tipInfo:"No Related Data", imageName: "dj_img_no_data")
+        emptyView.tipColor = UIColor.red
+        view.dj_showEmptyView(emptyView)
     }
 
 }
