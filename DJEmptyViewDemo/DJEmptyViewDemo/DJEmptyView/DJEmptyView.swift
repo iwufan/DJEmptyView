@@ -68,6 +68,16 @@ public class DJEmptyView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    /// You can hit the components below the empty view
+    public override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+        let hitView = super.hitTest(point, with: event)
+        
+        if hitView == self {
+            return nil
+        }
+        
+        return hitView
+    }
 }
 
 extension DJEmptyView {
